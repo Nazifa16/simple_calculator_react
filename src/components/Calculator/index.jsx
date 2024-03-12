@@ -27,16 +27,16 @@ function Calculator() {
 
   const handleResult = () => {
     if (operator == "/") {
-      const total = firstNumber / secondNumber;
+      const total = parseFloat(firstNumber) / parseFloat(secondNumber);
       setResult(total);
     } else if (operator == "*") {
-      const total = firstNumber * secondNumber;
+      const total = parseFloat(firstNumber) * parseFloat(secondNumber);
       setResult(total);
     } else if (operator == "-") {
-      const total = firstNumber - secondNumber;
+      const total = parseFloat(firstNumber) - parseFloat(secondNumber);
       setResult(total);
     } else if (operator == "+") {
-      const total = parseInt(firstNumber) + parseInt(secondNumber);
+      const total = parseFloat(firstNumber) + parseFloat(secondNumber);
       setResult(total);
     }
   };
